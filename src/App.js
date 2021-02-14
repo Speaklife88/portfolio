@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import  GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/HomePage/Home';
 import { Navbar}  from './components';
 
 
@@ -11,9 +12,10 @@ class App extends Component {
       <Router>
         <GlobalStyle />
         <Navbar />
-        <Switch />
-        <Route  path="/" />
-      </ Router>
+        <Switch >
+          <Route  path="/" exact component={Home} />
+        </Switch>
+      </Router>
       
     );
   }
