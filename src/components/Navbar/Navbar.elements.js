@@ -31,7 +31,7 @@ export const NavLogo = styled(Link)`
     font-size: 2rem;
     display: flex;
     align-items:center;
-`
+`;
 
 export const NavIcon = styled(FaMagento)`
     margin-right: 0.5rem;
@@ -48,7 +48,6 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem; 
     cursor: pointer;
-
 }
 `;
 
@@ -104,7 +103,8 @@ export const NavLinks = styled(Link)`
         display: table;
 
     &:hover {
-        color: #4b59f7;
+        background-color: #4b59f7;
+        height: 100%;
         transition: all 0.3s ease;
     }
 }
@@ -130,7 +130,7 @@ export const NavBtnLink = styled(Link)`
     width: 100%;
     border: none;
     outline: none;
-`
+`;
 
 
 

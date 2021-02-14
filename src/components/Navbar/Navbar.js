@@ -24,8 +24,8 @@ const Navbar = () => {
     const handleClick = () => setClick(!click);
 
     const showButton = () => {
-        if(window.innerwidth <= 960) {
-            setButton(false) 
+        if (window.innerwidth <= 960) {
+            setButton(false)
         } else {
             setButton(true)
         }
@@ -33,10 +33,10 @@ const Navbar = () => {
 
     useEffect(() => {
         showButton();
-    },[]);
+    }, []);
 
-    window.addEventListener('resize', showButton); 
-    
+    window.addEventListener('resize', showButton);
+
     return (
         <IconContext.Provider value={{ color: '#fff' }}>
             <Nav>
@@ -50,12 +50,26 @@ const Navbar = () => {
                         <NavItem>
                             <NavLinks to='/'>Home</NavLinks>
                         </NavItem>
+
                         <NavItem>
                             <NavLinks to='/services'>Services</NavLinks>
                         </NavItem>
+
                         <NavItem>
                             <NavLinks to='/products'>Products</NavLinks>
                         </NavItem>
+                        <NavItemBtn>
+                            {button ? (
+                                <NavBtnLink to="/sign-up">
+                                    <Button primary>SIGN UP</Button>
+                                </NavBtnLink>
+                            ) : (
+                                    <NavBtnLink to="/sign-up">
+                                        <Button fontBig primary>SIGN UP</Button>
+                                    </NavBtnLink>
+                                )
+                            }
+                        </NavItemBtn>
                     </NavMenu>
 
                 </NavbarContainer>
