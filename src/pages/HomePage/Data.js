@@ -15,19 +15,19 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    lightBg: false,
-    primary: true,
-    imgStart: '',
-    lightTopLine: true,
-    lightTextDesc: true,
+    lightBg: true,
+    primary: false,
+    imgStart: 'start',
+    lightTopLine: false,
+    lightTextDesc: false,
     buttonLabel: 'Get Started',
     description: 'I help business owners increase their revenue. My team of unique specialists can help you achieve your business goals.',
     headLine: 'Lead Generation Specialist for Online Businesses',
-    lightText: true,
+    lightText: false,
     topLine: 'Marketing Agency',
     img: require('../../images/IMG_0668.jpg'),
     alt: 'Image',
-    start: ''
+    start: 'true'
 };
 
 export const homeObjThree = {
