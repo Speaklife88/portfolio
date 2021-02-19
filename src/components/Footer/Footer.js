@@ -7,6 +7,11 @@ import {
   FooterSubText,
   Form,
   FormInput,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLinksItems,
+  FooterLinkTitle,
+  FooterLink
 } from "./Footer.elements";
 
 const Footer = () => {
@@ -22,6 +27,17 @@ const Footer = () => {
           <Button fontBig> Subscribe </Button>
         </Form>
       </FooterSubsription>
+      <FooterLinksContainer>
+        <FooterLinksWrapper>
+        <FooterLinksItems>
+          <FooterLinkTitle> About Us </FooterLinkTitle>
+            <FooterLink to='/sign-up'>How it Works</FooterLink>
+            <FooterLink to='/'>Testimonials</FooterLink>
+            <FooterLink to='/'>Career</FooterLink>
+            <FooterLink to='/'>Terms of Service</FooterLink>
+        </FooterLinksItems>
+        </FooterLinksWrapper>
+      </FooterLinksContainer>
     </FooterContainer>
   );
 };
