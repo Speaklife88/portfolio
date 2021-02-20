@@ -51,10 +51,18 @@ border: none;
 font-size: 16px;
 border: 1px solid #fff;
 
-&::placeholder {
-    color:#242424;
-}
+    &::placeholder {
+        color:#242424;
+    }
+    
+    @media screen and (max-width: 820px) {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
 `;
 
-
+export const FooterLinksContainer = styled.div` 
+width: 100;
+mamax
+`
 

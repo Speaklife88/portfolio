@@ -1,4 +1,5 @@
 import { Button } from "../../globalStyles";
+import {FaFacebook, FaYoutube, FaInstagram, FaClubhouse} from 'react-icons/fa';
 import React from "react";
 import {
   FooterContainer,
@@ -11,7 +12,7 @@ import {
   FooterLinksWrapper,
   FooterLinksItems,
   FooterLinkTitle,
-  FooterLink
+  FooterLink,
 } from "./Footer.elements";
 
 const Footer = () => {
@@ -29,15 +30,38 @@ const Footer = () => {
       </FooterSubsription>
       <FooterLinksContainer>
         <FooterLinksWrapper>
-        <FooterLinksItems>
-          <FooterLinkTitle> About Us </FooterLinkTitle>
-            <FooterLink to='/sign-up'>How it Works</FooterLink>
-            <FooterLink to='/'>Testimonials</FooterLink>
-            <FooterLink to='/'>Career</FooterLink>
-            <FooterLink to='/'>Terms of Service</FooterLink>
-        </FooterLinksItems>
+          <FooterLinksItems>
+            <FooterLinkTitle> About Us </FooterLinkTitle>
+            <FooterLink to="/sign-up">How it Works</FooterLink>
+            <FooterLink to="/">Testimonials</FooterLink>
+            <FooterLink to="/">Career</FooterLink>
+            <FooterLink to="/">Terms of Service</FooterLink>
+          </FooterLinksItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <SocialLogo to="/">
+            <SocialIcon />
+            Be.Irony
+          </SocialLogo>
+          <WebsiteRights> Be.Irony 2021</WebsiteRights>
+          <SocialIcons>
+            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <FaFacebook />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+              <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" aria-label="Clubhouse">
+              <FaClubhouse />
+            </SocialIconLink>
+          </SocialIcons>
+        </SocialMediaWrap>
+      </SocialMedia>
     </FooterContainer>
   );
 };
