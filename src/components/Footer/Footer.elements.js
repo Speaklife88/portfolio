@@ -62,7 +62,20 @@ border: 1px solid #fff;
 `;
 
 export const FooterLinksContainer = styled.div` 
-width: 100;
-mamax
+width: 100%;
+max-width: 1000px;
+display: flex;
+justify-content: center;
+
+@media screen and (max-width: 820px) {
+    padding-top: 32px;
+}
+`
+
+export const FooterLinksWrapper = styled.div`
+display: flex;
+
+
+
 `
 
