@@ -13,6 +13,13 @@ import {
   FooterLinksItems,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialIcon,
+  SocialIconLink,
+  SocialIcons,
+  SocialLogo,
+  WebsiteRights
 } from "./Footer.elements";
 
 const Footer = () => {
